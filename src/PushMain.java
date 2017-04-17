@@ -18,7 +18,8 @@ public class PushMain {
 		 ApnsService service =
 			     APNS.newService()
 			     .withCert(certificatePath, certificatePassword)
-			     .withSandboxDestination()
+			     //.withSandboxDestination() //开发环境推送证书使用
+                 .withAppleDestination(true) //发布版环境
 			     .build();
 		 
 //		 String payload = APNS.newPayload().alertBody("Can't be simpler than this!").build();
