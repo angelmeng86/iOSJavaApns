@@ -12,7 +12,7 @@ public class PushMain {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String certificatePath = "/Users/lwz/Documents/workspace/com_maple_push.p12";//推送证书
+		String certificatePath = "/Users/oye/Documents/workspace/com_maple_push.p12";//推送证书
         String certificatePassword = "111111";//此处注意导出的证书密码不能为空因为空密码会报错
 		
 		 ApnsService service =
